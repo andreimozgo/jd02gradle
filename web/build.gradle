@@ -1,0 +1,15 @@
+
+apply plugin: 'war'
+
+description = 'web'
+dependencies {
+  compile project(':services')
+    compile group: 'javax.servlet', name: 'jstl', version:'1.2'
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
+    compile group: 'org.springframework', name: 'spring-web', version:'4.3.4.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version:'4.3.4.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-web', version:'3.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-config', version:'3.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-taglibs', version:'3.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-core', version:'3.2.3.RELEASE'
+}
